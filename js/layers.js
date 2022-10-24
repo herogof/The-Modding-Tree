@@ -24,5 +24,12 @@ addLayer("E", {
     hotkeys: [
         {key: "E", description: "E: Reset for exploration points", onPress(){if (canReset(this.layer)) doReset(this.layer)}},
     ],
+    upgrades: {
+11: {
+title: "My first steps",
+description: "Everithing starts with a small step",
+cost: new Decimal(1),
+},
+    },
     layerShown(){return true}
 })
